@@ -1,0 +1,20 @@
+{
+  "name": "matrix",
+  "version": "0.0.0",
+  "homepage": "https://github.com/makky3939/matrix",
+  "authors": [
+    "Masaki Kobayashi <makky.4d6b.3f5@gmail.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  },
+  "exportsOverride": {
+  }
+}
