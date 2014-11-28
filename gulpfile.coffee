@@ -9,6 +9,7 @@ jade       = require 'gulp-jade'
 mincss     = require 'gulp-minify-css'
 plumber    = require 'gulp-plumber'
 sass       = require 'gulp-ruby-sass'
+uglify     = require 'gulp-uglify'
 webserver  = require 'gulp-webserver'
 sequence   = require 'run-sequence'
 
@@ -30,6 +31,7 @@ gulp.task 'coffee', ->
     .pipe coffeelint()
     .pipe coffeelint.reporter()
     .pipe coffee()
+    .pipe uglify {mangle: false}
     .pipe plumber.stop()
     .pipe gulp.dest 'dst/js/'
 
