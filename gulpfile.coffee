@@ -19,9 +19,8 @@ gulp.task 'clean', ->
 gulp.task 'bower', ->
   bower.commands.install().on 'end', (installed) ->
     gulp.src [
-      'bower_components/angular/angular.min.js'
-      'bower_components/angular/angular.min.js.map'
-      'bower_components/angular/angular-csp.css'
+      'bower_components/jquery/dist/jquery.min.js'
+      'bower_components/jquery/dist/jquery.min.map'
     ]
       .pipe gulp.dest './dst/lib/jquery/'
 
