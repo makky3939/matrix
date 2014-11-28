@@ -10,7 +10,19 @@ html
     meta(content='http://app.makky.io', property='og:url')
     meta(content='app.makky.io', property='og:site_name')
     link(href='css/style.css', rel='stylesheet')
+    script(src='lib/jquery/jquery.min.js')
     script(src='js/analytics.js')
     script(src='js/app.js')
   body
-    h1 Matrix
+    h1 8x8 Matrix
+
+    .board
+      .screw_holes
+        .screw_hole_left
+        .screw_hole_right
+      .display
+        - for(i=0;i<64;i++)
+          .cell(class='js-cell-#{i}')
+      .screw_holes
+        .screw_hole_left
+        .screw_hole_right

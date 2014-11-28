@@ -4,6 +4,57 @@ body
   height: 100%
   margin: 0
   padding: 0
+  color: #333
+  background: #fff
 
 h1
   text-align: center
+  line-height: 2
+
+.board
+  margin: 0 auto
+  padding: 8px 8px 8px
+  background: #1c7c97
+  display: block
+  width: 512px
+  height: 512px + (48*2)
+  border-radius: 4px
+
+.screw_holes
+  display: block
+  height: 48px
+
+.screw_hole_left,
+.screw_hole_right
+  display: inline
+  width: 24px
+  height: 24px
+  background: #aaa
+  border-radius: 50px
+  border: 4px solid #e3e3e3
+  margin-top: 8px
+
+.screw_hole_left
+  float: left
+
+.screw_hole_right
+  float: right
+
+.display
+  display: block
+  width: 512px
+  height: 512px
+  background: #343434
+  border-radius: 4px
+
+.cell
+  background: #454545
+  border-radius: 50px
+  display: inline-block
+  width: 56px
+  height: 56px
+  transition: all 1s ease-in
+  margin: 4px
+
+.active
+  background: #12abd7 !important
